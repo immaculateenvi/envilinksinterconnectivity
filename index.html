@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>Envilinks Interconnectivity | EI</title>
+    <link rel="icon" href="logo.png" type="image/jpeg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&family=Montserrat:wght@700;800&family=Roboto:wght@300;400;500;700&family=Open+Sans:wght@300;400;600;700&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation - Completely Fixed -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="#home" class="logo">
+                    <img src="logo.png" alt="EI Logo" loading="lazy" onerror="this.src='https://via.placeholder.com/40x40/1a3b5d/ffffff?text=EI'">
+                    <div class="logo-text">
+                        <h1>EI</h1>
+                        <p class="tagline">Envilinks Interconnectivity</p>
+                    </div>
+                </a>
+
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <div class="nav-links" id="navLinks">
+                    <a href="#home" class="nav-link active">
+                        <i class="fas fa-home"></i> <span>Home</span>
+                    </a>
+                    <a href="#services" class="nav-link">
+                        <i class="fas fa-cogs"></i> <span>Services</span>
+                    </a>
+                    <a href="#portfolio" class="nav-link">
+                        <i class="fas fa-briefcase"></i> <span>Portfolio</span>
+                    </a>
+                    
+                    <!-- Dropdown for Tools - Fixed -->
+                    <div class="dropdown">
+                        <button class="nav-link dropdown-toggle" id="themeDropdown">
+                            <i class="fas fa-tools"></i> <span>Tools</span> <i class="fas fa-chevron-down dropdown-arrow"></i>
+                        </button>
+                        <div class="dropdown-menu">
+                            <div class="dropdown-header">
+                                <i class="fas fa-palette"></i> Theme Lab
+                            </div>
+                            <a href="#theme-lab" class="dropdown-item">
+                                <i class="fas fa-paint-brush"></i> Theme Customizer
+                            </a>
+                            
+                            <div class="dropdown-header">
+                                <i class="fas fa-code"></i> Development
+                            </div>
+                            <a href="#code-lab" class="dropdown-item">
+                                <i class="fas fa-laptop-code"></i> Code Lab
+                            </a>
+                            
+                            <div class="dropdown-header">
+                                <i class="fas fa-paint-brush"></i> Creative
+                            </div>
+                            <a href="#name-art" class="dropdown-item">
+                                <i class="fas fa-font"></i> Name Art Generator
+                            </a>
+                            
+                            <div class="dropdown-header">
+                                <i class="fas fa-calculator"></i> Tools
+                            </div>
+                            <a href="#calculator" class="dropdown-item">
+                                <i class="fas fa-calculator"></i> Project Calculator
+                            </a>
+                            
+                            <div class="dropdown-divider"></div>
+                            
+                            <div class="dropdown-header">
+                                <i class="fas fa-palette"></i> Quick Themes
+                            </div>
+                            <div class="theme-presets-dropdown">
+                                <button class="theme-preset" data-theme="default">
+                                    <span class="preset-color" style="background: #1a3b5d;"></span>
+                                    <span>Patriot</span>
+                                </button>
+                                <button class="theme-preset" data-theme="dark">
+                                    <span class="preset-color" style="background: #2d3436;"></span>
+                                    <span>Dark</span>
+                                </button>
+                                <button class="theme-preset" data-theme="ocean">
+                                    <span class="preset-color" style="background: #0984e3;"></span>
+                                    <span>Ocean</span>
+                                </button>
+                                <button class="theme-preset" data-theme="sunset">
+                                    <span class="preset-color" style="background: #e17055;"></span>
+                                    <span>Sunset</span>
+                                </button>
+                                <button class="theme-preset" data-theme="purple">
+                                    <span class="preset-color" style="background: #6c5ce7;"></span>
+                                    <span>Purple</span>
+                                </button>
+                                <button class="theme-preset" data-theme="green">
+                                    <span class="preset-color" style="background: #00b894;"></span>
+                                    <span>Green</span>
+                                </button>
+                            </div>
+                            
+                            <div class="dropdown-divider"></div>
+                            
+                            <button class="dropdown-item" id="openDevlab">
+                                <i class="fas fa-flask"></i> Open DevLab
+                                <span class="dropdown-shortcut">Ctrl+D</span>
+                            </button>
+                            
+                            <div class="dropdown-divider"></div>
+                            
+                            <button class="dropdown-item" id="resetAllSettings">
+                                <i class="fas fa-undo-alt"></i> Reset All Settings
+                                <span class="dropdown-shortcut">Ctrl+R</span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <a href="#contact" class="nav-link">
+                        <i class="fas fa-phone"></i> <span>Contact</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Envilinks <span class="stellar-gold">Interconnectivity</span></h1>
+                    <p class="hero-subtitle">Professional graphics design, web development & internet services with 3+ years of excellence</p>
+                    
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">98%</span>
+                            <span class="stat-label">Satisfaction</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Clients</span>
+                        </div>
+                    </div>
+
+                    <div class="hero-buttons">
+                        <a href="#portfolio" class="btn btn-primary">
+                            <i class="fas fa-eye"></i> View Work
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <i class="fas fa-comment"></i> Get Quote
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-subtitle">Professional solutions for your digital needs</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>Graphics Design</h3>
+                    <p>Logo design, branding, marketing materials, and visual identity packages.</p>
+                    <div class="service-tags">
+                        <span>Logo</span>
+                        <span>Branding</span>
+                        <span>Print</span>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>Responsive websites, e-commerce solutions, and custom web applications.</p>
+                    <div class="service-tags">
+                        <span>Responsive</span>
+                        <span>E-commerce</span>
+                        <span>Custom</span>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <h3>Internet Services</h3>
+                    <p>High-speed internet solutions, network setup, and technical support.</p>
+                    <div class="service-tags">
+                        <span>Fiber</span>
+                        <span>Wi-Fi</span>
+                        <span>Support</span>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Domain & Hosting</h3>
+                    <p>Domain registration, web hosting, SSL certificates, and email setup.</p>
+                    <div class="service-tags">
+                        <span>Domains</span>
+                        <span>Hosting</span>
+                        <span>SSL</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Portfolio</h2>
+                <p class="section-subtitle">Showcasing our best work from 1.jpg to 29.jpg</p>
+            </div>
+
+            <div class="portfolio-controls">
+                <div class="filter-tabs">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="web">Web</button>
+                    <button class="filter-btn" data-filter="design">Design</button>
+                    <button class="filter-btn" data-filter="branding">Branding</button>
+                </div>
+
+                <div class="view-toggle">
+                    <button class="view-btn active" data-view="grid">
+                        <i class="fas fa-th"></i>
+                    </button>
+                    <button class="view-btn" data-view="list">
+                        <i class="fas fa-list"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="portfolio-grid grid" id="portfolioGrid">
+                <!-- Projects will be loaded here dynamically -->
+                <div class="loading">
+                    <i class="fas fa-spinner fa-spin"></i>
+                    <p>Loading projects...</p>
+                </div>
+            </div>
+
+            <div class="portfolio-footer">
+                <div class="projects-count">
+                    <span>Showing <span id="shownCount">0</span> of <span id="totalCount">0</span> projects</span>
+                </div>
+                <button id="loadMoreBtn" class="btn btn-load-more">
+                    <i class="fas fa-plus"></i> Load More
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Theme Lab Section -->
+    <section class="theme-lab" id="theme-lab">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Theme Laboratory</h2>
+                <p class="section-subtitle">Customize the look and feel of your experience</p>
+            </div>
+
+            <div class="theme-lab-container">
+                <!-- Theme Presets -->
+                <div class="theme-presets-panel">
+                    <h3><i class="fas fa-magic"></i> Quick Theme Presets</h3>
+                    <div class="preset-grid">
+                        <div class="theme-card" data-theme="default">
+                            <div class="theme-preview" style="background: linear-gradient(135deg, #1a3b5d, #2c4c6e);"></div>
+                            <div class="theme-info">
+                                <h4>Patriot Blue</h4>
+                                <p>Professional & trustworthy</p>
+                            </div>
+                        </div>
+                        <div class="theme-card" data-theme="dark">
+                            <div class="theme-preview" style="background: linear-gradient(135deg, #2d3436, #636e72);"></div>
+                            <div class="theme-info">
+                                <h4>Dark Mode</h4>
+                                <p>Easy on the eyes</p>
+                            </div>
+                        </div>
+                        <div class="theme-card" data-theme="ocean">
+                            <div class="theme-preview" style="background: linear-gradient(135deg, #0984e3, #00cec9);"></div>
+                            <div class="theme-info">
+                                <h4>Ocean Blue</h4>
+                                <p>Fresh & calming</p>
+                            </div>
+                        </div>
+                        <div class="theme-card" data-theme="sunset">
+                            <div class="theme-preview" style="background: linear-gradient(135deg, #e17055, #fdcb6e);"></div>
+                            <div class="theme-info">
+                                <h4>Sunset</h4>
+                                <p>Warm & energetic</p>
+                            </div>
+                        </div>
+                        <div class="theme-card" data-theme="purple">
+                            <div class="theme-preview" style="background: linear-gradient(135deg, #a29bfe, #6c5ce7);"></div>
+                            <div class="theme-info">
+                                <h4>Royal Purple</h4>
+                                <p>Creative & luxurious</p>
+                            </div>
+                        </div>
+                        <div class="theme-card" data-theme="green">
+                            <div class="theme-preview" style="background: linear-gradient(135deg, #00b894, #00cec9);"></div>
+                            <div class="theme-info">
+                                <h4>Emerald</h4>
+                                <p>Natural & balanced</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Color Customization -->
+                <div class="theme-custom-panel">
+                    <h3><i class="fas fa-sliders-h"></i> Custom Colors</h3>
+                    <div class="color-grid">
+                        <div class="color-item">
+                            <label>Primary</label>
+                            <div class="color-input-wrapper">
+                                <input type="color" id="primaryColor" value="#1a3b5d">
+                                <span class="color-hex">#1a3b5d</span>
+                            </div>
+                        </div>
+                        <div class="color-item">
+                            <label>Secondary</label>
+                            <div class="color-input-wrapper">
+                                <input type="color" id="secondaryColor" value="#2c4c6e">
+                                <span class="color-hex">#2c4c6e</span>
+                            </div>
+                        </div>
+                        <div class="color-item">
+                            <label>Accent</label>
+                            <div class="color-input-wrapper">
+                                <input type="color" id="accentColor" value="#d32f2f">
+                                <span class="color-hex">#d32f2f</span>
+                            </div>
+                        </div>
+                        <div class="color-item">
+                            <label>Gold</label>
+                            <div class="color-input-wrapper">
+                                <input type="color" id="goldColor" value="#c6a43f">
+                                <span class="color-hex">#c6a43f</span>
+                            </div>
+                        </div>
+                        <div class="color-item">
+                            <label>Background</label>
+                            <div class="color-input-wrapper">
+                                <input type="color" id="bgColor" value="#f5f7fa">
+                                <span class="color-hex">#f5f7fa</span>
+                            </div>
+                        </div>
+                        <div class="color-item">
+                            <label>Card BG</label>
+                            <div class="color-input-wrapper">
+                                <input type="color" id="cardBgColor" value="#ffffff">
+                                <span class="color-hex">#ffffff</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Typography Controls -->
+                    <div class="typography-panel">
+                        <h4><i class="fas fa-font"></i> Typography</h4>
+                        <div class="font-controls">
+                            <div class="font-item">
+                                <label>Heading Font</label>
+                                <select id="headingFont" class="font-select">
+                                    <option value="Poppins" selected>Poppins</option>
+                                    <option value="Montserrat">Montserrat</option>
+                                    <option value="Inter">Inter</option>
+                                    <option value="Roboto">Roboto</option>
+                                    <option value="Open Sans">Open Sans</option>
+                                </select>
+                            </div>
+                            <div class="font-item">
+                                <label>Body Font</label>
+                                <select id="bodyFont" class="font-select">
+                                    <option value="Inter" selected>Inter</option>
+                                    <option value="Poppins">Poppins</option>
+                                    <option value="Roboto">Roboto</option>
+                                    <option value="Open Sans">Open Sans</option>
+                                    <option value="Lato">Lato</option>
+                                </select>
+                            </div>
+                            <div class="font-item">
+                                <label>Font Size (px)</label>
+                                <div class="range-wrapper">
+                                    <input type="range" id="fontSize" min="12" max="20" value="16" step="1">
+                                    <span id="fontValue">16px</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Theme Actions -->
+                    <div class="theme-actions">
+                        <button id="applyThemeBtn" class="btn btn-primary">
+                            <i class="fas fa-check"></i> Apply Changes
+                        </button>
+                        <button id="resetThemeBtn" class="btn btn-secondary">
+                            <i class="fas fa-undo"></i> Reset
+                        </button>
+                        <button id="saveThemeBtn" class="btn btn-save">
+                            <i class="fas fa-save"></i> Save Theme
+                        </button>
+                    </div>
+
+                    <!-- Live Preview -->
+                    <div class="theme-preview-box">
+                        <h4><i class="fas fa-eye"></i> Live Preview</h4>
+                        <div class="preview-card">
+                            <div class="preview-header">
+                                <h5>Sample Card</h5>
+                            </div>
+                            <div class="preview-body">
+                                <p>This is how your theme will look on cards and text elements.</p>
+                                <button class="preview-button">Sample Button</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Code Lab Section -->
+    <section class="code-lab" id="code-lab">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Code Laboratory</h2>
+                <p class="section-subtitle">Write, edit, and run HTML, CSS, and JavaScript in real-time</p>
+            </div>
+
+            <div class="code-lab-container">
+                <!-- Templates Panel -->
+                <div class="code-templates-panel">
+                    <h3><i class="fas fa-template"></i> Quick Templates</h3>
+                    <div class="template-grid">
+                        <button class="template-card template-btn" data-template="button">
+                            <i class="fas fa-square"></i>
+                            <span>Button</span>
+                        </button>
+                        <button class="template-card template-btn" data-template="card">
+                            <i class="fas fa-id-card"></i>
+                            <span>Card</span>
+                        </button>
+                        <button class="template-card template-btn" data-template="navbar">
+                            <i class="fas fa-bars"></i>
+                            <span>Navbar</span>
+                        </button>
+                        <button class="template-card template-btn" data-template="form">
+                            <i class="fas fa-wpforms"></i>
+                            <span>Form</span>
+                        </button>
+                        <button class="template-card template-btn" data-template="grid">
+                            <i class="fas fa-th"></i>
+                            <span>Grid</span>
+                        </button>
+                        <button class="template-card template-btn" data-template="modal">
+                            <i class="fas fa-window-maximize"></i>
+                            <span>Modal</span>
+                        </button>
+                        <button class="template-card template-btn" data-template="animation">
+                            <i class="fas fa-play"></i>
+                            <span>Animation</span>
+                        </button>
+                        <button class="template-card template-btn" data-template="flex">
+                            <i class="fas fa-arrows-alt-h"></i>
+                            <span>Flexbox</span>
+                        </button>
+                    </div>
+                    <p class="template-note"><i class="fas fa-info-circle"></i> Select a template to start, then edit the code below</p>
+                </div>
+
+                <!-- Code Editor Panel -->
+                <div class="code-editor-panel">
+                    <!-- Editor Tabs -->
+                    <div class="editor-tabs">
+                        <button class="editor-tab active" data-editor="html">
+                            <i class="fab fa-html5"></i> HTML
+                        </button>
+                        <button class="editor-tab" data-editor="css">
+                            <i class="fab fa-css3-alt"></i> CSS
+                        </button>
+                        <button class="editor-tab" data-editor="js">
+                            <i class="fab fa-js"></i> JavaScript
+                        </button>
+                    </div>
+
+                    <!-- Code Editors -->
+                    <div class="editors-container">
+                        <textarea id="htmlEditor" class="code-editor active" placeholder="<!-- Write your HTML here -->" spellcheck="false"><div class="demo-card">
+    <h3>Welcome to Code Lab</h3>
+    <p>Edit this code to see real-time changes!</p>
+    <button class="demo-btn" onclick="alert('Hello from EI!')">Click Me</button>
+</div></textarea>
+                        
+                        <textarea id="cssEditor" class="code-editor" placeholder="/* Write your CSS here */" spellcheck="false">.demo-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    max-width: 350px;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid #e1e5e9;
+}
+
+.demo-card h3 {
+    color: #1a3b5d;
+    margin-bottom: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.demo-card p {
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.demo-btn {
+    background: #1a3b5d;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.demo-btn:hover {
+    background: #2c4c6e;
+    transform: translateY(-2px);
+}</textarea>
+
+                        <textarea id="jsEditor" class="code-editor" placeholder="// Write your JavaScript here" spellcheck="false">// Interactive JavaScript example
+document.querySelectorAll('.demo-btn').forEach(btn => {
+    btn.addEventListener('click', function() {
+        this.style.transform = 'scale(0.95)';
+        setTimeout(() => {
+            this.style.transform = '';
+            alert('Button clicked!');
+        }, 200);
+    });
+});</textarea>
+                    </div>
+
+                    <!-- Editor Controls -->
+                    <div class="editor-controls">
+                        <button id="runCodeBtn" class="btn btn-primary">
+                            <i class="fas fa-play"></i> Run Code
+                        </button>
+                        <button id="clearCodeBtn" class="btn btn-secondary">
+                            <i class="fas fa-trash"></i> Clear
+                        </button>
+                        <button id="copyCodeBtn" class="btn btn-secondary">
+                            <i class="fas fa-copy"></i> Copy
+                        </button>
+                        <button id="downloadCodeBtn" class="btn btn-secondary">
+                            <i class="fas fa-download"></i> Download
+                        </button>
+                    </div>
+
+                    <!-- Preview Area -->
+                    <div class="preview-container">
+                        <div class="preview-header">
+                            <h4><i class="fas fa-eye"></i> Live Preview</h4>
+                            <div class="preview-controls">
+                                <button id="refreshPreview" class="btn-icon" title="Refresh Preview">
+                                    <i class="fas fa-sync-alt"></i>
+                                </button>
+                                <button id="fullscreenPreview" class="btn-icon" title="Fullscreen">
+                                    <i class="fas fa-expand"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="preview-frame" id="codePreview">
+                            <!-- Preview will be injected here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Name Art Generator -->
+    <section class="name-art" id="name-art">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Name Art Generator</h2>
+                <p class="section-subtitle">Create beautiful artwork from any name</p>
+            </div>
+
+            <div class="art-container">
+                <div class="art-controls">
+                    <div class="input-group">
+                        <label for="nameInput">
+                            <i class="fas fa-font"></i> Enter Name
+                        </label>
+                        <input type="text" id="nameInput" placeholder="Type your name here..." maxlength="20">
+                    </div>
+
+                    <div class="style-selector">
+                        <h4>Select Style</h4>
+                        <div class="style-options">
+                            <button class="style-option active" data-style="gradient">
+                                <div class="style-preview" style="background: linear-gradient(135deg, #1a3b5d, #c6a43f);"></div>
+                                <span>Gradient</span>
+                            </button>
+                            <button class="style-option" data-style="modern">
+                                <div class="style-preview" style="background: linear-gradient(45deg, #1a3b5d 25%, #d32f2f 25%, #d32f2f 50%, #1a3b5d 50%);"></div>
+                                <span>Modern</span>
+                            </button>
+                            <button class="style-option" data-style="elegant">
+                                <div class="style-preview" style="background: radial-gradient(circle, #c6a43f, #1a3b5d);"></div>
+                                <span>Elegant</span>
+                            </button>
+                            <button class="style-option" data-style="neon">
+                                <div class="style-preview" style="background: linear-gradient(135deg, #d32f2f, #c6a43f);"></div>
+                                <span>Neon</span>
+                            </button>
+                            <button class="style-option" data-style="3d">
+                                <div class="style-preview" style="background: #1a3b5d; box-shadow: 5px 5px 0 #c6a43f;"></div>
+                                <span>3D</span>
+                            </button>
+                            <button class="style-option" data-style="outline">
+                                <div class="style-preview" style="background: transparent; border: 3px solid #1a3b5d;"></div>
+                                <span>Outline</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <button id="generateArtBtn" class="btn btn-generate">
+                        <i class="fas fa-magic"></i> Generate Art
+                    </button>
+                </div>
+
+                <div class="art-preview">
+                    <div class="preview-area" id="previewArea">
+                        <div class="art-placeholder">
+                            <i class="fas fa-image"></i>
+                            <p>Your name art will appear here</p>
+                        </div>
+                    </div>
+
+                    <div class="art-actions">
+                        <button id="downloadArtBtn" class="btn btn-download" disabled>
+                            <i class="fas fa-download"></i> Download
+                        </button>
+                        <button id="shareArtBtn" class="btn btn-share" disabled>
+                            <i class="fas fa-share-alt"></i> Share
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calculator Section -->
+    <section class="calculator" id="calculator">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Project Calculator</h2>
+                <p class="section-subtitle">Estimate your project cost</p>
+            </div>
+
+            <div class="calculator-box">
+                <!-- Currency Selector -->
+                <div class="currency-selector">
+                    <div class="form-group">
+                        <label><i class="fas fa-dollar-sign"></i> Display Currency</label>
+                        <select id="currencySelector" class="form-input">
+                            <option value="NGN" selected>🇳🇬 Nigerian Naira (₦)</option>
+                            <option value="USD">🇺🇸 US Dollar ($)</option>
+                            <option value="EUR">🇪🇺 Euro (€)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="calc-form">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="serviceType">
+                                <i class="fas fa-cogs"></i> Service Type
+                            </label>
+                            <select id="serviceType" class="form-input">
+                                <option value="">Select Service</option>
+                                <option value="graphics">Graphics Design</option>
+                                <option value="web">Web Development</option>
+                                <option value="internet">Internet Services</option>
+                                <option value="domain">Domain & Hosting</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="complexity">
+                                <i class="fas fa-layer-group"></i> Complexity
+                            </label>
+                            <select id="complexity" class="form-input">
+                                <option value="">Select Level</option>
+                                <option value="simple">Simple</option>
+                                <option value="medium">Medium</option>
+                                <option value="complex">Complex</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="timeline">
+                                <i class="fas fa-clock"></i> Timeline
+                            </label>
+                            <select id="timeline" class="form-input">
+                                <option value="">Select Timeline</option>
+                                <option value="standard">Standard (2-4 weeks)</option>
+                                <option value="fast">Fast (1-2 weeks)</option>
+                                <option value="urgent">Urgent (3-7 days)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="pages">
+                                <i class="fas fa-file"></i> Pages
+                            </label>
+                            <input type="number" id="pages" class="form-input" min="1" max="50" value="1" placeholder="Number of pages">
+                        </div>
+                    </div>
+
+                    <button id="calculateBtn" class="btn btn-calculate">
+                        <i class="fas fa-calculator"></i> Calculate Cost
+                    </button>
+
+                    <div class="calc-result" id="calcResult">
+                        <div class="result-header">
+                            <h3><i class="fas fa-file-invoice-dollar"></i> Estimated Cost</h3>
+                        </div>
+                        
+                        <div class="result-details">
+                            <div class="detail-row">
+                                <span>Base Price:</span>
+                                <span id="basePrice">₦0</span>
+                            </div>
+                            <div class="detail-row">
+                                <span>Complexity:</span>
+                                <span id="complexityFactor">1.0x</span>
+                            </div>
+                            <div class="detail-row">
+                                <span>Timeline:</span>
+                                <span id="timelineFactor">1.0x</span>
+                            </div>
+                            <div class="detail-row">
+                                <span>Additional:</span>
+                                <span id="additionalCost">₦0</span>
+                            </div>
+                        </div>
+
+                        <div class="result-total">
+                            <span>Total Cost:</span>
+                            <span id="totalCost" class="total">₦0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Ready to start your project?</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="info-text">
+                            <h3>Call Us</h3>
+                            <p>+234 814 244 2012</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-text">
+                            <h3>Email Us</h3>
+                            <p>envilinksinterconnectivity@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-text">
+                            <h3>Visit Us</h3>
+                            <p>Iseyin, Oyo State, & Akure, Ondo State Nigeria</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-buttons">
+                        <a href="https://wa.me/+2348142442012" class="social-btn whatsapp" target="_blank" rel="noopener">
+                            <i class="fab fa-whatsapp"></i>
+                            WhatsApp
+                        </a>
+                        <a href="https://facebook.com/Immaculateenvilinks" class="social-btn facebook" target="_blank" rel="noopener">
+                            <i class="fab fa-facebook-f"></i>
+                            Facebook
+                        </a>
+                        <a href="https://www.linkedin.com/company/envilinks-interconnectivity" class="social-btn linkedin" target="_blank" rel="noopener">
+                            <i class="fab fa-linkedin-in"></i>
+                            LinkedIn                        </a>
+                        <a href="https://www.instagram.com/envilinks" class="social-btn instagram" target="_blank" rel="noopener">
+                            <i class="fab fa-instagram"></i>
+                            Instagram
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="logo.png" alt="EI Logo" loading="lazy" onerror="this.src='https://via.placeholder.com/50x50/1a3b5d/ffffff?text=EI'">
+                    </div>
+                    <div class="footer-info">
+                        <h2>Envilinks <span class="stellar-gold">Interconnectivity</span></h2>
+                        <p class="motto">Primus Inter Cetera</p>
+                        <p>Professional digital solutions since 2022</p>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h3>Services</h3>
+                        <a href="#services">Graphics Design</a>
+                        <a href="#services">Web Development</a>
+                        <a href="#services">Internet Services</a>
+                        <a href="#services">Domain & Hosting</a>
+                    </div>
+
+                    <div class="link-group">
+                        <h3>Explore</h3>
+                        <a href="#theme-lab">Theme Lab</a>
+                        <a href="#code-lab">Code Lab</a>
+                        <a href="#name-art">Name Art</a>
+                        <a href="#calculator">Calculator</a>
+                    </div>
+
+                    <div class="link-group">
+                        <h3>Quick Links</h3>
+                        <a href="#home">Home</a>
+                        <a href="#services">Services</a>
+                        <a href="#portfolio">Portfolio</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Envilinks Interconnectivity. All rights reserved.</p>
+                <p class="motto stellar-gold">Primus Inter Cetera</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- DevLab Sidebar -->
+    <div class="devlab-sidebar" id="devlabSidebar">
+        <div class="sidebar-header">
+            <h3><i class="fas fa-flask"></i> DevLab</h3>
+            <button id="closeDevlab" class="btn-icon" aria-label="Close DevLab">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="sidebar-content">
+            <div class="sidebar-tabs">
+                <button class="sidebar-tab active" data-tab="html">HTML</button>
+                <button class="sidebar-tab" data-tab="css">CSS</button>
+                <button class="sidebar-tab" data-tab="js">JS</button>
+            </div>
+            <div class="sidebar-panels">
+                <div class="sidebar-panel active" id="htmlPanel">
+                    <textarea placeholder="HTML Code..."></textarea>
+                </div>
+                <div class="sidebar-panel" id="cssPanel">
+                    <textarea placeholder="CSS Code..."></textarea>
+                </div>
+                <div class="sidebar-panel" id="jsPanel">
+                    <textarea placeholder="JavaScript Code..."></textarea>
+                </div>
+            </div>
+            <button class="btn btn-primary" id="runCodeSidebar">Run Code</button>
+        </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close" id="lightboxClose"><i class="fas fa-times"></i></button>
+            <img src="" alt="" id="lightboxImg">
+            <p class="lightbox-caption" id="lightboxCaption"></p>
+            <button class="lightbox-prev" id="lightboxPrev"><i class="fas fa-chevron-left"></i></button>
+            <button class="lightbox-next" id="lightboxNext"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </div>
+
+    <!-- Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
